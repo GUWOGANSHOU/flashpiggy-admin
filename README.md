@@ -58,13 +58,13 @@
 # 项目小记
 >写这篇文章很仓促，先暂时搬运做这个项目时的笔记，之后再慢慢整理。
 ##### 一、路由导航
-#####1.声明式导航：使用 <router-link> 创建<a>标签来定义导航链接
+##### 1.声明式导航：使用 <router-link> 创建<a>标签来定义导航链接
 ```
 <router-link to="/achievement_info">奖励成就</router-link>
 ```
 - 点击 <router-link> 时，这个方法会在内部调用，所以说，点击 <router-link to="..."> 等同于调用 router.push(...)。
 - Tips：如果在同一个父组件下使用router-link切换子组件，子组件不会重新挂载（挂载钩子函数mouted()不会执行)，若想子组件重新挂载，可给子组件加上一个key值标识。
-#####2.编程式导航：使用router.push 方法 
+##### 2.编程式导航：使用router.push 方法 
 ```
   this.$router.push({path:"/shop_info", query: {business_code:row.userCode}});
 ```
