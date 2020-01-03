@@ -93,7 +93,7 @@ router.push({ path: '/user', params: { userId }}) // -> /user
 ```
 同样的规则也适用于 router-link 组件的 to 属性。
 ##### 二、Vue组件
-#####1.局部注册组件
+##### 1.局部注册组件
 ```
 import TheSidebar from "./components/reuse/sidebar.vue";
 import Layout from "./components/reuse/layout.vue";
@@ -105,7 +105,7 @@ export default {
   }
 };
 ```
-#####2.使用组件
+##### 2.使用组件
 ```
 <template>
   <div id="app">
@@ -114,7 +114,7 @@ export default {
   </div>
 </template>
 ```
-#####3.动态组件
+##### 3.动态组件
 - 使用 is 特性来切换不同的组件并使用<keep-alive>缓存组件状态，避免反复重渲染导致的性能问题。
 ```
 
@@ -136,7 +136,6 @@ export default {
 ```
 
 ##### 三、BoostrapVue表格组件
-[图片上传失败...(image-5d80d6-1577449037174)]
 ```
 <template>
    <b-table show-empty
@@ -211,7 +210,7 @@ export default {
 </script>
 ```
 ##### 四、表格数据增删改查
-#####1.以项目列表project_table为例
+##### 1.以项目列表project_table为例
 - 根据isShow判断是否显示
 ```
 <template>
@@ -279,7 +278,7 @@ export default {
 </tempalte>   
 
 ```
-#####3.父子组件之间通信
+##### 3.父子组件之间通信
 - 这里使用组件自定义事件，子组件冒泡触发父组件的方法。
 >[vm.$emit( eventName, […args] )](https://cn.vuejs.org/v2/api/#vm-emit)
 
@@ -326,10 +325,10 @@ push() 方法可把它的参数顺序添加到 arrayObject 的尾部。它直接
     },
 </script>
 ```
-#####五、Axios
+##### 五、Axios
 >留个坑
-#####六、CSS3简单图片轮播
-#####1.CSS3 动画属性（Animation）
+##### 六、CSS3简单图片轮播
+##### 1.CSS3 动画属性（Animation）
 值 |  说明 |  
 -|-
 | *[animation-name](https://www.runoob.com/cssref/css3-pr-animation-name.html)* | 指定要绑定到选择器的关键帧的名称 |
@@ -342,7 +341,7 @@ push() 方法可把它的参数顺序添加到 arrayObject 的尾部。它直接
 | *[animation-play-state](https://www.runoob.com/cssref/css3-pr-animation-play-state.html)* | 指定动画是否正在运行或已暂停。 |
 | *[initial](https://www.runoob.com/cssref/css-inherit.html)* | 设置属性为其默认值。  |
 | [inherit](https://www.runoob.com/cssref/css-inherit.html) | 从父元素继承属性。 
-#####2.基本思路
+##### 2.基本思路
 - 基本布局
 将5张图片左浮动横向并排放入一个div容器（#photos）内，图片设置统一尺寸，div宽度设置5个图片的总尺寸，然后放入相框容器div（#frame），相框设置1个图片的大小并设置溢出隐藏，以保证正确显示一个照片。
 - 设置动画
@@ -420,6 +419,6 @@ push() 方法可把它的参数顺序添加到 arrayObject 的尾部。它直接
     transform: translateX(0%);
 }
 ```
-#####七、使用Echarts图表组件
+##### 七、使用Echarts图表组件
 >待续
 
